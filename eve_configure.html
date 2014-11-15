@@ -1,0 +1,25 @@
+<template name="configureLoginServiceDialogForEve">
+  <p>
+    First, you'll need to create an EVE Online 3rd party application ID and its secret. Follow these steps:
+  </p>
+  <ol>
+    <li>
+      Visit <a href="https://developers.eveonline.com/applications" target="_blank">https://developers.eveonline.com/applications</a>
+    </li>
+    <li>
+      Click "Create New Application".
+    </li>
+    <li>
+      Type a name and description for your app.
+    </li>
+    <li>
+      Select "Authentication Only".
+    </li>
+    <li>
+      Set "Callback URL" to: <span class="url">{{siteUrl}}_oauth/eve</span>
+    </li>
+    <li>
+      Finish by clicking "Create Application".
+    </li>
+  </ol>
+</template>
